@@ -1,0 +1,12 @@
+CC = gcc
+CFLAGS = -Wall -g -O0
+
+SRC = main.c seqlist.c
+
+OBJ = seqlist-test
+
+$(OBJ) : $(SRC)
+	$(CC) $(CFLAGS) -o $@ $^
+
+clean:
+	$(RM) $(OBJ) *.o *.*.sw?
