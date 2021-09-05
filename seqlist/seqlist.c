@@ -92,7 +92,7 @@ int seqlist_exit(LPSEQLIST lpHead)
 {
     int i = -1;
 
-    if (seqlist_isempty(lpHead)) {
+    if (!seqlist_isempty(lpHead)) {
         for (i = 0; i < lpHead->last_index; i++)
             seqlist_del(lpHead, i);
     }
