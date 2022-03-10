@@ -1,9 +1,9 @@
 CC = gcc
 CFLAGS = -Wall -g -O0
 
-SRC = main.c singlylist.c
+SRC = main.c singlelist.c
 
-OBJ = singlylist-test
+OBJ = singlelist-test
 
 $(OBJ) : $(SRC)
 	$(CC) $(CFLAGS) -o $@ $^
