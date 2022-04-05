@@ -6,3 +6,4 @@ File IO programming.
 
 - [Base file](file-base/README.md)
 
+- [Stream file](file-stream/README.md)
