@@ -1,4 +1,4 @@
-## Linked List
+## Multi Thread
 
 Multithreading programming.
 
