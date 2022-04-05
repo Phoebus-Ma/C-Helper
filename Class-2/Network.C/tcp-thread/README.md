@@ -1,6 +1,6 @@
 ### Introduction
 
-Multi thread tcp/udp server/client test sample code.
+Multi thread tcp server/client test sample code.
 
 
 ### Platform
