@@ -6,4 +6,5 @@ Multithreading programming.
 
 - [Base thread](thread-base/README.md)
 
+- [Semaphore](thread-semaphore/README.md)
 
