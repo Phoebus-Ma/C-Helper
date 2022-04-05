@@ -20,7 +20,6 @@ make
 ```bash
 $ ./thread-base
 
-./thread-base 
 Parameter: To be NO.1.
 Child thread running.
 Child thread running.

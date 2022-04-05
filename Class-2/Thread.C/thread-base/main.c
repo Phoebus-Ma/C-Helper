@@ -1,5 +1,5 @@
 /**
- * C base process example.
+ * C base thread example.
  * 
  * License - MIT.
 */
@@ -38,7 +38,7 @@ int main(void)
     /* Create thread. */
     ret = pthread_create(&tid, NULL, thread_function, &param);
 
-    if (0 > ret) {
+    if (0 != ret) {
         printf("Error in pthread_create.\n");
         goto err_create;
     }
