@@ -1,5 +1,5 @@
 /**
- * C data structure sequence list example. 
+ * C base process example.
  * 
  * License - MIT.
 */
