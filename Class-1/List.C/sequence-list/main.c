@@ -1,4 +1,6 @@
 /**
+ * C data structure sequence list example. 
+ * 
  * License - MIT.
 */
 
