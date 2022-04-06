@@ -6,3 +6,4 @@ Data structure: C language to achieve the sort.
 
 - [Sequence sort](sort-sequence/README.md)
 
+- [Binary sort](sort-binary/README.md)
