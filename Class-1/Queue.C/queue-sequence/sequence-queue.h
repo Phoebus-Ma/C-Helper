@@ -1,5 +1,5 @@
 /**
- * C data structure linked queue example.
+ * C data structure sequence queue example.
  * 
  * License - MIT.
 */
@@ -24,8 +24,8 @@ bool sequeue_isempty (LPSEQUEUE lpqueue);
 bool sequeue_isfull  (LPSEQUEUE lpqueue);
 int sequeue_put      (LPSEQUEUE lpqueue, int data);
 int sequeue_get      (LPSEQUEUE lpqueue, int *data);
-int sequeue_init     (LPSEQUEUE *lpHead);
-int sequeue_clear    (LPSEQUEUE lpHead);
+int sequeue_init     (LPSEQUEUE *lpqueue);
+int sequeue_clear    (LPSEQUEUE lpqueue);
 
 
 #endif /* __SEQUENCE_QUEUE_H__ */

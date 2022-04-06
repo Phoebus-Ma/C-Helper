@@ -34,7 +34,7 @@ int sequeue_put(LPSEQUEUE lpqueue, int data)
     if (sequeue_isfull(lpqueue))
         return -1;
 
-    /* Push data to stack. */
+    /* Put data to stack. */
     lpqueue->rear = (lpqueue->rear + 1) % MAX_DATA_SIZE;
     lpqueue->data[lpqueue->rear] = data;
 
@@ -51,7 +51,7 @@ int sequeue_get(LPSEQUEUE lpqueue, int *data)
     if (sequeue_isempty(lpqueue))
         return -1;
 
-    /* Pop data from stack. */
+    /* Get data from stack. */
     lpqueue->front = (lpqueue->front + 1) % MAX_DATA_SIZE;
     *data = lpqueue->data[lpqueue->front];
 
