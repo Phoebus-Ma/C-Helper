@@ -1,6 +1,6 @@
 ### Introduction
 
-Linked stack test sample code.
+Sequence queue test sample code.
 
 
 ### Platform
@@ -18,8 +18,8 @@ make
 ### Run
 
 ```console
-$ ./linkedstack-test
+$ ./sequeue-test
 
-Push data: 1 2 3 4 5
-Pop data: 5 4 3 2 1
+Put data: 1 2 3 4 5 
+Get data: 1 2 3 4 5 
 ```
