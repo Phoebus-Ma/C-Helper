@@ -1,5 +1,5 @@
 /**
- * C data structure sequence list example. 
+ * C data structure sequence list example.
  * 
  * License - MIT.
 */

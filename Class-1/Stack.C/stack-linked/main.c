@@ -1,19 +1,18 @@
 /**
- * C data structure sequence stack example.
+ * C data structure linked stack example.
  * 
  * License - MIT.
 */
 
 #include <stdio.h>
-#include <string.h>
 
-#include "sequence-stack.h"
+#include "linked-stack.h"
 
 
 /**
- * stack_test - Use stack test example.
+ * linklist_test - Use linked stack test example.
 */
-int stack_test(LPSEQSTACK lpHead, int buf[], int len)
+int stack_test(LPLINKSTACK *lpcursor, int buf[], int len)
 {
     int i = 0;
     int data = 0;
@@ -21,14 +20,15 @@ int stack_test(LPSEQSTACK lpHead, int buf[], int len)
     printf("Push data: ");
 
     for (i = 0; i < len; i++) {
-        seqstack_push(lpHead, buf[i]);
+        linkstack_push(lpcursor, buf[i]);
         printf("%d ", buf[i]);
     }
 
     printf("\nPop data: ");
 
     for (i = 0; i < len; i++) {
-        seqstack_pop(lpHead, &data);
+        linkstack_pop(lpcursor, &data);
+
         printf("%d ", data);
     }
 
@@ -44,13 +44,13 @@ int stack_test(LPSEQSTACK lpHead, int buf[], int len)
 int main(void)
 {
     int buf[5] = {1, 2, 3, 4, 5};
-    LPSEQSTACK seqhead = NULL;
+    LPLINKSTACK lpcursor = NULL;
 
-    seqstack_init(&seqhead);
+    linkstack_init(&lpcursor);
 
-    stack_test(seqhead, buf, 5);
+    stack_test(&lpcursor, buf, 5);
 
-    seqstack_clear(seqhead);
+    linkstack_clear(&lpcursor);
 
     return 0;
 }

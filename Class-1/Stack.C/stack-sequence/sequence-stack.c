@@ -1,10 +1,10 @@
 /**
- * C data structure sequence stack example. 
+ * C data structure sequence stack example.
  * 
  * License - MIT.
 */
 
-#include "seqstack.h"
+#include "sequence-stack.h"
 
 
 /**
@@ -26,7 +26,7 @@ bool seqstack_isfull(LPSEQSTACK lpstack)
 
 
 /**
- * seqstack_push - .
+ * seqstack_push - Push data to stack.
 */
 int seqstack_push(LPSEQSTACK lpstack, int data)
 {
@@ -43,7 +43,7 @@ int seqstack_push(LPSEQSTACK lpstack, int data)
 
 
 /**
- * seqstack_pop - .
+ * seqstack_pop - Pop data from stack.
 */
 int seqstack_pop(LPSEQSTACK lpstack, int *data)
 {

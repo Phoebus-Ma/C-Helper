@@ -2,9 +2,9 @@
 CC = gcc
 CFLAGS = -Wall -g -O0
 
-SRC = main.c sequence-stack.c
+SRC = main.c linked-stack.c
 
-OBJ = seqstack-test
+OBJ = linkedstack-test
 
 $(OBJ) : $(SRC)
 	$(CC) $(CFLAGS) -o $@ $^
