@@ -1,4 +1,4 @@
-## Stack
+## Queue
 
 Data structure: C language to achieve the queue.
 
