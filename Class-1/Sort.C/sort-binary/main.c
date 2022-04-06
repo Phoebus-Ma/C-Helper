@@ -1,5 +1,5 @@
 /**
- * C data structure sequence sort example.
+ * C data structure binary sort example.
  * 
  * License - MIT.
 */
