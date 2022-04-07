@@ -1,11 +1,11 @@
 ### Introduction
 
-Sequence linked list test sample code.
+Sequence list test sample code.
 
 
 ### Platform
 
-Linux.
+Ubuntu Linux.
 
 
 ### Build
@@ -17,7 +17,7 @@ make
 
 ### Run
 
-```base
+```console
 $ ./seqlist-test
 
 1 2 3 4 5 6 7 8 9 10

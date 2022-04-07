@@ -5,9 +5,13 @@
 */
 
 #include <stdio.h>
-#include "seqlist.h"
+
+#include "sequence-list.h"
 
 
+/**
+ * test_show - Diaplay list data.
+*/
 void test_show(LPSEQLIST lplist)
 {
     int i;
@@ -18,6 +22,10 @@ void test_show(LPSEQLIST lplist)
     printf("\n");
 }
 
+
+/**
+ * Main function.
+*/
 int main(void)
 {
     int i = -1;
@@ -35,7 +43,7 @@ int main(void)
 
     test_show(lphead);
 
-    seqlist_exit(lphead);
+    seqlist_clear(lphead);
 
     return 0;
 }

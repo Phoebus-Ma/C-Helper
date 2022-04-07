@@ -1,9 +1,10 @@
+# Makefile
 CC = gcc
 CFLAGS = -Wall -g -O0
 
-SRC = main.c seqlist.c
+SRC = main.c double-list.c
 
-OBJ = seqlist-test
+OBJ = doulist-test
 
 $(OBJ) : $(SRC)
 	$(CC) $(CFLAGS) -o $@ $^

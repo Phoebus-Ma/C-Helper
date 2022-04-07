@@ -1,9 +1,10 @@
+# Makefile
 CC = gcc
 CFLAGS = -Wall -g -O0
 
-SRC = main.c singlelist.c
+SRC = main.c single-list.c
 
-OBJ = singlelist-test
+OBJ = sinlist-test
 
 $(OBJ) : $(SRC)
 	$(CC) $(CFLAGS) -o $@ $^

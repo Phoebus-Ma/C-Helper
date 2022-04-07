@@ -1,11 +1,11 @@
 ### Introduction
 
-Singly linked list test sample code.
+Single linked list test sample code.
 
 
 ### Platform
 
-Linux.
+Ubuntu Linux.
 
 
 ### Build
@@ -17,8 +17,8 @@ $ make
 
 ### Run
 
-```bash
-$ ./singlelist-test
+```console
+$ ./sinlist-test
 
 1 2 3 4 5
 5 4 3 2 1

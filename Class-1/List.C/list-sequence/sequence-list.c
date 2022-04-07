@@ -1,25 +1,29 @@
 /**
+ * C data structure sequence list example.
+ * 
  * License - MIT.
 */
 
-#include "seqlist.h"
+#include "sequence-list.h"
 
 
 /**
  * seqlist_isempty - Determine if the table is empty.
 */
-int seqlist_isempty(LPSEQLIST lplist)
+bool seqlist_isempty(LPSEQLIST lplist)
 {
     return (-1 == lplist->last_index);
 }
 
+
 /**
  * seqlist_isfull - Determine if the table is full up.
 */
-int seqlist_isfull(LPSEQLIST lplist)
+bool seqlist_isfull(LPSEQLIST lplist)
 {
     return ((MAX_DATA_SIZE - 1) == lplist->last_index);
 }
+
 
 /**
  * seqlist_insert - Add the specified data  by index.
@@ -46,6 +50,7 @@ int seqlist_insert(LPSEQLIST lplist, int index, int data)
     return 0;
 }
 
+
 /**
  * seqlist_del - Deletes the specified data by index.
 */
@@ -68,6 +73,7 @@ int seqlist_del(LPSEQLIST lplist, int index)
     return 0;
 }
 
+
 /**
  * seqlist_init - Initialize sequence list.
 */
@@ -85,10 +91,11 @@ int seqlist_init(LPSEQLIST *lpHead)
     return 0;
 }
 
+
 /**
- * seqlist_exit - clear sequence list.
+ * seqlist_clear - clear sequence list.
 */
-int seqlist_exit(LPSEQLIST lpHead)
+int seqlist_clear(LPSEQLIST lpHead)
 {
     int i = -1;
 

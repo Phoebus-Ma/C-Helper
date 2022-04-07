@@ -1,12 +1,16 @@
 /**
+ * C data structure sequence list example.
+ * 
  * License - MIT.
 */
 
-#ifndef __SEQLIST_H__
-#define __SEQLIST_H__
+#ifndef __SEQUENCE_LIST_H__
+#define __SEQUENCE_LIST_H__
+
 
 #include <stdio.h>
 #include <stdlib.h>
+#include <stdbool.h>
 
 #define MAX_DATA_SIZE           10
 
@@ -16,11 +20,12 @@ typedef struct _SEQLIST {
 } SEQLIST, *LPSEQLIST;
 
 
-int seqlist_isempty (LPSEQLIST lplist);
-int seqlist_isfull  (LPSEQLIST lplist);
+bool seqlist_isempty (LPSEQLIST lplist);
+bool seqlist_isfull  (LPSEQLIST lplist);
 int seqlist_insert  (LPSEQLIST lplist, int index, int data);
 int seqlist_del     (LPSEQLIST lplist, int index);
 int seqlist_init    (LPSEQLIST *lpHead);
-int seqlist_exit    (LPSEQLIST lpHead);
+int seqlist_clear   (LPSEQLIST lpHead);
 
-#endif /* __SEQLIST_H__ */
+
+#endif /* __SEQUENCE_LIST_H__ */
