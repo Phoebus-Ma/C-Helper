@@ -1,6 +1,6 @@
 ### Introduction
 
-Multi thread tcp server/client test sample code.
+Multi process tcp server/client test sample code.
 
 
 ### Platform
@@ -32,7 +32,7 @@ From client 4 Recv: Test for client.
 From client 4 Recv: Test for client.
 From client 4 Recv: Test for client.
 From client 4 Recv: Test for client.
-... ...
+...
 ```
 
 ```console

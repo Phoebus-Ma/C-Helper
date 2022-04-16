@@ -8,7 +8,6 @@
 #include <stdlib.h>
 #include <string.h>
 
-#include <pthread.h>
 
 #include <fcntl.h>
 #include <unistd.h>
@@ -27,12 +26,11 @@
 
 
 /**
- * thread_function - Thread function.
+ * process_function - Sever working process function.
 */
-void *thread_function(void *param)
+int process_function(int cltfd)
 {
     int ret         = -1;
-    int cltfd      = *(int *)param;
     char buf[128]   = { 0 };
 
     while (1)
@@ -63,9 +61,8 @@ void *thread_function(void *param)
 err_read:
     close(cltfd);
 
-    return (void *)0;
+    return 0;
 }
-
 
 /**
  * start_server - Start tcp server.
@@ -110,16 +107,14 @@ err_socket:
     return -1;
 }
 
-
 /**
  * Main function.
 */
 int main(void)
 {
-    int ret     = -1;
     int serfd   = -1;
     int cltfd   = -1;
-    pthread_t tid;
+    pid_t pid   = -1;
 
     /* Start tcp server. */
     serfd = start_server(SERVER_IP, SERVER_PORT);
@@ -137,13 +132,19 @@ int main(void)
     {
         cltfd = accept(serfd, NULL, NULL);
 
-        ret = pthread_create(&tid, NULL, thread_function, &cltfd);
+        pid = fork();
 
-        if (0 != ret) {
-            printf("Error in pthread_create.\n");
+        if (0 > pid) {
+            printf("Error in create sub process for client: %d.\n", cltfd);
+        }
+        else if (0 == pid) {
+            process_function(cltfd);
+        }
+        else {
+            /* Main process. */
+            printf("Connected client: %d, loop accept.\n", cltfd);
         }
 
-        printf("Connected client: %d, loop accept.\n", cltfd);
         sleep(1);
     }
     
