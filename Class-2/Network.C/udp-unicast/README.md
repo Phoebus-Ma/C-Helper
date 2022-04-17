@@ -1,6 +1,6 @@
 ### Introduction
 
-UDP server/client test sample code.
+UDP unicast server/client test sample code.
 
 
 ### Platform
