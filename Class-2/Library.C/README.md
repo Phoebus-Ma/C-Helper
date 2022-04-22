@@ -4,5 +4,7 @@ DLL and lib test example.
 
 ## catalogue
 
-- [DLLTEST](Dlltest/README.md)
+- [DLLTEST](DllTest/README.md)
+
+- [LibTEST](LibTest/README.md)
 
