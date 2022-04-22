@@ -139,10 +139,11 @@ int main(void)
         }
         else if (0 == pid) {
             process_function(cltfd);
+            exit(0);
         }
         else {
             /* Main process. */
-            printf("Connected client: %d, loop accept.\n", cltfd);
+            printf("Server PID: %d Connected client: %d, loop accept.\n", getpid(), cltfd);
         }
 
         sleep(1);
@@ -155,4 +156,3 @@ int main(void)
 err_start:
     return -1;
 }
-

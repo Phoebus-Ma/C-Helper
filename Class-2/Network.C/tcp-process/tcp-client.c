@@ -98,4 +98,3 @@ int main(void)
 err_client:
     return -1;
 }
-

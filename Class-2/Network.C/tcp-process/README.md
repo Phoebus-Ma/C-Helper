@@ -26,12 +26,20 @@ TCP Sever running.
 Server ip: 127.0.0.1, port: 65533.
 Press CTRL+C to quit.
 
-Connected client: 4, loop accept.
+Server PID: 2493 Connected client: 4, loop accept.
 From client 4 Recv: Test for client.
 From client 4 Recv: Test for client.
+Server PID: 2493 Connected client: 5, loop accept.
+From client 5 Recv: Test for client.
 From client 4 Recv: Test for client.
+From client 5 Recv: Test for client.
 From client 4 Recv: Test for client.
+From client 5 Recv: Test for client.
 From client 4 Recv: Test for client.
+From client 5 Recv: Test for client.
+Client exit.
+From client 5 Recv: Test for client.
+Client exit.
 ...
 ```
 

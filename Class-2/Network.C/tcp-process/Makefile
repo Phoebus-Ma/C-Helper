@@ -8,7 +8,7 @@ SRC2 = tcp-server.c
 OBJ1 = tcp-client
 OBJ2 = tcp-server
 
-$(OBJ1) : $(SRC1)
+all:
 	$(CC) $(CFLAGS) -o $(OBJ1) $(SRC1)
 	$(CC) $(CFLAGS) -o $(OBJ2) $(SRC2)
 
