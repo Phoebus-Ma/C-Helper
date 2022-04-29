@@ -8,7 +8,7 @@ SRC2 = udp-server.c
 OBJ1 = udp-client
 OBJ2 = udp-server
 
-$(OBJ1) : $(SRC1)
+all:
 	$(CC) $(CFLAGS) -o $(OBJ1) $(SRC1)
 	$(CC) $(CFLAGS) -o $(OBJ2) $(SRC2)
 

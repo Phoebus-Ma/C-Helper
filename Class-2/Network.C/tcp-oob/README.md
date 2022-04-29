@@ -10,7 +10,7 @@ Ubuntu for Linux.
 
 ### Build
 
-```bash
+```console
 make
 ```
 
